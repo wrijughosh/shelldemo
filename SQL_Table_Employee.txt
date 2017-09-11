@@ -1,0 +1,15 @@
+/****** Object:  Table [dbo].[Employee]    Script Date: 02-Aug-17 8:26:53 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Employee](
+	[EmpId] [int] IDENTITY(1,1) NOT NULL,
+	[EmpName] [varchar](50) NULL,
+ CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED 
+(
+	[EmpId] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF)
+)
+
+GO
